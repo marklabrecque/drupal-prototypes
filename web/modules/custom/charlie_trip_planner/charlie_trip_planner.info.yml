@@ -1,0 +1,8 @@
+name: Charlie Trip Planner
+type: module
+description: Basic prototype for Charlier's Trip Planner
+core: 8.x
+package: Charlie
+dependencies:
+  - views
+  - pathauto

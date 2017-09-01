@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains charlie_trip_planner.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function charlie_trip_planner_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the charlie_trip_planner module.
+    case 'help.page.charlie_trip_planner':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Basic prototype for Charlier&#039;s Trip Planner') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function charlie_trip_planner_theme() {
+  return [
+    'charlie_trip_planner' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme
+ */

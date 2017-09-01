@@ -1,0 +1,7 @@
+map:
+  version: 1.x
+  js:
+    js/map.js: {}
+  css:
+    theme:
+      css/map.css: {}
